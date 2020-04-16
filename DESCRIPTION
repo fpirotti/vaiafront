@@ -7,9 +7,41 @@ License: MIT + file LICENSE
 Imports: 
     config,
     golem,
-    shiny
+    shiny,
+    processx,
+    attempt,
+    DT,
+    glue,
+    htmltools,
+    stringr,
+    thinkr,
+    tibble,
+    htmlwidgets,
+    leaflet,
+    RColorBrewer,
+    RJSONIO,
+    RCurl,
+    httr,
+    shinyjs,
+    shinyWidgets,
+    shinydashboard,
+    shinydashboardPlus,
+    openxlsx,
+    RPostgreSQL,
+    curl,
+    jsonlite,
+    crul,
+    DBI,
+    data.table
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
 URL: https://github.com/fpirotti
 BugReports: https://github.com/fpirotti/issues
+Suggests: 
+    testthat (>= 2.1.0),
+    purrr,
+    readr,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

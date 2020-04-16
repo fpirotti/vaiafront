@@ -16,11 +16,35 @@
 ## Dependencies ----
 ## Add one line by package you want to add as dependency
 usethis::use_package( "thinkr" )
+usethis::use_package("stringr")
+usethis::use_package("purrr", type = "Suggests")
+usethis::use_package("readr", type = "Suggests")
+usethis::use_tibble()
+usethis::use_package("htmlwidgets")
+usethis::use_package("leaflet")
+usethis::use_package("RColorBrewer")
+usethis::use_package("RJSONIO")
+usethis::use_package("RCurl")
+usethis::use_package("httr")
+usethis::use_package("shinyjs")
+usethis::use_package("shinyWidgets")
+usethis::use_package("shinydashboard")
+usethis::use_package("shinydashboardPlus")
+usethis::use_package("openxlsx")
+usethis::use_package("stringr")
+usethis::use_package("DT")
+usethis::use_package("RPostgreSQL")
+usethis::use_package("curl")
+usethis::use_package("jsonlite")
+usethis::use_package("crul")
+usethis::use_package("DBI")
+usethis::use_package("data.table")
+
 
 ## Add modules ----
 ## Create a module infrastructure in R/
-golem::add_module( name = "name_of_module1" ) # Name of the module
-golem::add_module( name = "name_of_module2" ) # Name of the module
+golem::add_module( name = "mappa" ) # Name of the module
+golem::add_module( name = "tabella" ) # Name of the module
 
 ## Add helper functions ----
 ## Creates ftc_* and utils_*
@@ -29,9 +53,9 @@ golem::add_utils( "helpers" )
 
 ## External resources
 ## Creates .js and .css files at inst/app/www
-golem::add_js_file( "script" )
-golem::add_js_handler( "handlers" )
-golem::add_css_file( "custom" )
+golem::add_js_file( "script", open = FALSE )
+golem::add_js_handler( "handlers" , open = FALSE)
+golem::add_css_file( "custom", open = FALSE )
 
 ## Add internal datasets ----
 ## If you have data in your package
@@ -50,8 +74,8 @@ devtools::build_vignettes()
 ## Code coverage ----
 ## (You'll need GitHub there)
 usethis::use_github()
-usethis::use_travis()
-usethis::use_appveyor()
+#usethis::use_travis()
+#usethis::use_appveyor()
 
 # You're now set! ----
 # go to dev/03_deploy.R
