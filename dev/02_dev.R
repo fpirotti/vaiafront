@@ -73,10 +73,11 @@ devtools::build_vignettes()
  
 ## Code coverage ----
 ## (You'll need GitHub there)
+usethis::browse_github_issues()
 #usethis::browse_github_token()
 #usethis::edit_r_environ() 11cee63b018fe02210dc9b1beba327b7b4772125
 
-usethis::use_github()
+usethis::use_github() 
 #usethis::use_travis()
 #usethis::use_appveyor()
 
