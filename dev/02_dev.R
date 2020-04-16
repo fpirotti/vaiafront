@@ -70,7 +70,7 @@ usethis::use_test( "app" )
 ## Vignette ----
 usethis::use_vignette("vaiafront")
 devtools::build_vignettes()
-
+ 
 ## Code coverage ----
 ## (You'll need GitHub there)
 #usethis::browse_github_token()
