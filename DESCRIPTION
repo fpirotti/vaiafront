@@ -32,10 +32,11 @@ Imports:
     jsonlite,
     crul,
     DBI,
-    data.table
+    data.table,
+    pkgload
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.0
 URL: https://github.com/fpirotti
 BugReports: https://github.com/fpirotti/issues
 Suggests: 
